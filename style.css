@@ -1,0 +1,679 @@
+*{
+box-sizing:border-box;
+text-decoration: none;
+}
+
+header{
+	overflow-x:hidden;
+	position: sticky;
+	top: 0;
+	z-index: 2;
+}
+
+header a{
+	font-family: "sniglet", cursive;
+	font-size:1.3em;
+	transition: 0.3 ease;
+}
+
+.dropdown-content{
+	display:none;
+	position:absolute;
+	background-color: #f1f1f1;
+	min-width:160px;
+	box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.2);
+	z-index:1; 
+}
+
+.dropdown-content a{
+	color:black;
+	padding:12px 20px;
+	display: block;
+	text-decoration: none;
+	transition: 0.3 ease;
+	
+
+}
+
+
+.dropdown-content a:hover{
+	background-color: #ddd;
+	text-decoration: none;
+}
+
+
+.dropdown:hover .dropdown-content{
+	display: block;
+}	
+
+
+header .nav-item{
+	padding: 0.5em 0.5em 0.5em 0.2em;
+	position: relative;
+}
+
+
+/* extra*/
+header .nav-item:before{
+	content: "";
+	width:0%;
+	height: 2px;
+	position: absolute;
+background-color:black;
+	top: 80%;
+	left: 0%;
+	transition: 1s all ease;
+	border-radius: 10px;
+}
+
+
+header .nav-item:after{
+	content: "";
+	width:0%;
+	height: 2px;
+	position: absolute;
+background-color:black;
+	bottom:  80%;
+	right:  0%;
+	transition: 1s all ease;
+	border-radius: 10px;
+}
+
+header .nav-item:hover:before{
+width: 100%;
+background: red;
+}
+
+header .nav-item:hover:after{
+width: 100%;
+background: red;
+}
+
+
+/* extra*/
+
+
+header .nav-item:last-child{
+	margin-right: 6em;
+}
+
+
+header .navbar-brand{
+	padding-left: 2rem;
+}
+
+header .nav-link:hover{
+	color:black;
+}
+
+.section1{
+	padding:0;
+	
+}
+
+.cover{
+	width:100%;
+	height: 55vmin;
+	background: url("cafe19.jpg");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.cover .overlay{position:absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+	z-index: 1;
+}
+
+
+.cover .content {width: 100%;
+	height: 100%;
+background: rgba(0,0,0,0.5); 
+ padding-top :19vmin;
+	
+}
+
+.cover .content>h1{
+	font-family:"patua one", cursive;
+font-size:6vmin;
+color:whitesmoke;
+}
+
+.cover .content>p{
+	font-family: "Rubik", cursive;
+	font-size:3vmin;
+	color:#e5e5e5;
+}
+
+.one{
+	padding: 0;
+}
+.checkin{
+	background-color: none;
+	position: relative;
+	top:-30px;
+	height: 200px;
+}
+
+.checkin .rect{
+	position: relative;
+	background: white;
+	width:15rem;
+	height: 12rem;
+	padding-top:1rem;
+	margin: 1rem;
+	border-radius: 0.5rem;
+	box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.8);
+z-index: 1;  
+}
+
+.checkin .rect h3{
+	font-size:27px;
+	
+}
+
+
+.checkin .rect>p{
+	
+	font-size: 15px;
+}
+
+.checkin .form-control{
+	width: 12rem;
+	margin:1.5rem auto;
+
+}
+
+.checkin .custom-select{
+	width: 12rem;
+	margin:0.5rem auto;
+
+}
+
+/*.exchange{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	z-index: 2;
+	margin-top: 8%;
+}*/
+
+
+.section2{
+padding: 20vmin 0vmin;
+
+}
+
+.section2 .row .col-md-6 .img1 img{
+opacity: 0.8;
+width: 90%;
+height: 500px;
+border-radius: 0.2em;
+}
+
+.section2 .row .col-md-6 .img1,
+.section2 .row .col-md-6 .panel,
+.card1,.card2,.card3{
+	opacity: 0;
+}
+
+.section2 .row .col-md-6 .img1 .animated,
+.section2 .row .col-md-6 .panel .animated,
+.card1,.card2,.card3{
+	opacity: 1;
+}
+
+.section2 .row .col-md-6:last-child{
+	position: relative;
+} 
+
+.section2 .row .col-md-6 .panel{
+	position: absolute;
+	top:7vmin;
+	left: -17vmin;
+	background-color: white;
+	border-radius: 3px;
+	text-align: left;
+	padding: 11vmin 5vmin 12vmin 10vmin;
+  box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.8);
+font-family: "Rubik", cursive;
+z-index: 1;
+}
+
+.section2 .row .col-md-6 .panel h1 {
+  font-weight: bold;
+  padding: 0.4em 0;
+  font-size: 2em;
+}
+
+.section2 .row .col-md-6 .panel p {
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.section3{
+	padding-bottom: 5rem;
+}
+
+.section3 .container h1 {
+  font-size: 6vmin;
+  padding-top: 5vmin;
+
+}
+
+.section3 .package {
+  padding: 10vmin 4vmin;
+}
+
+.section3 .card {
+  width: 22em;
+  margin-top: 10vmin;
+  height: 450px;
+  box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.8);
+}
+
+.section3 .card .card-text {
+  padding: 0.5em;
+}
+
+.section3 .card-body > a {
+  font-size: 1em;
+}
+
+.section3 .carousel-item {
+  padding-left: 3rem;
+}
+
+.section3 .carousel-control-next-icon{position: absolute;
+	right: 60%;
+	top: 50%;
+}
+
+.section3 .carousel-control-prev-icon{position: absolute;
+	left: 60%;
+	top: 50%;
+}
+
+.border-radius {
+  border-radius: 340px;
+  width: 60%;
+}
+
+.section4{
+	padding: 0;
+	margin-top: 0rem;
+	height: 50vmin;
+}
+
+.section4 .cover1{
+		width: 100%;
+	height: 100%;
+position: relative;
+
+}
+
+.section4 .cover1 .carousel-item img{
+	height: 50vmin;
+}
+/*.section4  .c1{
+	background-image: url("hb7.jpg");
+	background-position: center;
+	background-size: cover;
+}*/
+
+.section4 .overlay1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	
+}
+
+.section4 .content1{
+	width: 100%;
+	height: 100%;
+	
+	padding-top: 19vmin;
+}
+
+.section4 .content1>h1{
+	font-family:"patua one", cursive;
+font-size:6vmin;
+color:whitesmoke;
+}
+
+.section5{
+	padding-bottom: 3rem;
+}
+.section5 .container{
+	padding: 0;
+}
+.section5 h1{
+	padding: 12vmin 0 3vmin 0;
+
+}
+
+
+.section5 .places{
+	padding: 5vmin 10vmin;
+	background-color:none;
+}
+
+.section5 .places .col-md-12{
+	padding: 2vmin 0 ;
+	background-color: none;
+	width:10vmin;
+}
+
+
+.section5 .carousel-item{
+	padding-left: 0rem;
+
+}
+
+.section5 .carousel-item img{
+	width: 100%;
+	height: 100%;
+	border-radius: 0.3em;
+	
+}
+.section5 .carousel-caption h3{
+	color:white;
+	position: absolute;
+	top: 50%;
+	left: 15%;
+}
+
+.section5 .fa-arrow-circle-left{
+	position: absolute;
+	left: 8%;
+	top: 40%;
+	border-radius: 50%;
+}
+
+
+.section5 .fa-arrow-circle-right{
+	position: absolute;
+	right: 8%;
+	top: 40%;
+	border-radius: 50%;
+}
+
+
+.section6 {
+	margin: 0em 0em;
+	padding: 4rem 0em;
+
+}
+
+.section6 .row .client{
+	background-color:none;
+	padding: 1em 1.5em; 
+	box-shadow: 0px 20px 50px rgba(153, 153, 153, 0.4);
+	border-radius: 0.2rem;
+	padding-bottom: 2em;
+	height: 100%;
+}
+
+.section6 .client >h2{
+	padding-bottom: 0.3em;
+	 font-size: 35px;
+	font-family: "patua one", cursive;
+	
+	margin: 10px 15px;
+	padding-top: 0.3em;
+}
+
+.section6 .client .carousel{
+	padding-bottom: 3rem;
+	padding-right: 0rem;
+}
+
+.section6 .client .carousel-control-prev{
+	
+	width:50px;
+	height:30px;
+	top:95%;
+	left:85%;
+}
+
+.section6 .client  .carousel-control-next{
+	
+	width:50px;
+	height:30px;
+	top:95%;
+}
+
+
+
+.media img{
+	border-radius: 50%;
+}
+
+.media{
+	margin-bottom: 10px;
+}
+
+
+.section6 .row .news{
+	background-color: none;
+	padding: 1em 1.5em;
+	box-shadow: 0px 20px 50px rgba(153, 153, 153, 0.4);
+	border-radius: 0.2rem
+}
+
+.section6 .news >h2{ padding-bottom: 0.3em;
+	 font-size: 35px;
+	font-family: "patua one", cursive;
+	
+	margin: 10px 15px;
+	padding-top: 0.3em;}
+
+
+.section6 .news .date{
+	width: 60px;
+	height: 85px;
+	
+	border-radius: 2px;
+	padding: 4px;
+	text-align: center;
+	color: white
+	
+}
+
+.section6 .news .date h4{
+	font-size: 30px;
+}
+
+.section6 .news .carousel{
+	padding-bottom: 3rem;
+	padding-right: 0rem;
+}
+
+
+.section6 .news .carousel-control-prev{
+	
+	width:50px;
+	height:30px;
+	top:93%;
+	left:78%;
+}
+
+.section6 .news  .carousel-control-next{
+	
+	width:50px;
+	height:30px;
+	top:93%;
+}
+
+
+.section7 ul li{
+	line-height: 2.3;
+}
+
+.footerSection1{
+	background-color: lightgray;
+
+}
+
+.footerSection1 .col1 ul li{
+line-height: 2.3em;
+}
+
+.footerSection1 .col1 ul li a{
+	color: black;
+	text-decoration: none;
+}
+
+.footerSection1 .col1 ul li a:hover{
+	color: gray;
+}
+#check{width: 20px; height: 20px; margin-top: 5px;}
+
+.footerSection2{
+	width: 100%;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	border-bottom: 1px solid black;
+}
+
+
+.footerSection2 .container .social-box{
+	
+	margin-left:21%;
+	padding: 0px 30px;
+	width:60%;
+	box-shadow: 0px 20px 50px rgba(153, 153, 153, 0.2);
+}
+
+.footerSection2 .container .icon{
+	text-align: center;
+	
+	margin: 30px 0px; 
+	padding: 5px 0px;
+
+	text-decoration: none;
+	background-color: none;
+	
+transition: .3s all;
+}
+
+.footerSection2 .container .icon:hover{
+	transform: scale(1.1);
+}
+
+
+
+.fa-facebook-official{
+	color:white;
+	background-color: #3b5998;
+	border-radius: 50%;
+	padding: 10px;
+	box-shadow: 0px 20px 50px rgba(153, 153, 153, 0.2);
+}
+
+.fa-twitter{
+		color:white;
+	background-color: #3f729b;
+	border-radius: 50%;
+	padding: 10px;
+	box-shadow: 0px 20px 50px rgba(153, 153, 153, 0.2);
+}
+
+.fa-instagram {
+color:white;
+	background-color: #C13584;
+	border-radius: 50%;
+	padding: 10px;
+	box-shadow: 0px 20px 50px rgba(153, 153, 153, 0.2);
+}
+
+.fa-linkedin{
+color:white;
+	background-color: #0077B5;
+	border-radius: 50%;
+	padding: 10px;
+	box-shadow: 0px 20px 50px rgba(153, 153, 153, 0.2);
+}
+
+.fa-youtube{
+color:white;
+	background-color: #c4302b;
+	border-radius: 50%;
+	padding: 10px;
+	box-shadow: 0px 20px 50px rgba(153, 153, 153, 0.2);
+}
+
+.fa-skype{
+	color:white;
+	background-color: skyblue;
+	border-radius: 50%;
+	padding: 10px;
+box-shadow: 0px 20px 50px rgba(153, 153, 153, 0.2);
+}
+
+
+
+.footerSection3 span{
+	font-weight:bolder; font-size:17px;
+}
+
+
+/*.section5 .carousel-item .col-md-3{
+	box-shadow:  0px 25px 42px 20px rgba(0, 0, 0, 0.2);
+	
+
+}
+
+.section5 .carousel-item .col-md-3:first-child{
+	margin-left: 0;
+}
+*/
+/*.checkin{
+	background-color: blue;
+	position: absolute;
+	bottom:-10rem;
+	left: 3rem;
+	
+}
+
+.checkin .rect{
+	position:relative;
+	z-index: 1;
+	background: white;
+	width:17rem;
+	height: 12rem;
+	padding-top: 3.5vmin;
+	margin: 1rem;
+	border-radius: 0.5rem;
+	box-shadow: 1px 2px 50px 0px rgba(255,0,0,0.349);
+}
+
+
+
+.checkin .rect h3{
+	font-size:40px;
+	color:tomato;
+}
+
+
+.checkin .rect>p{
+	font-family: "patua one", cursive;
+}
+
+
+
+
+.two{
+	background-color: blue; 
+	position: absolute;
+	top:20em;
+}
+*/
